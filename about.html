@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Your Clinic Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef5ff; /* Light Blue Background */
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .about-content {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0044cc;
+            color: white;
+        }
+        nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+/* Default animation setup */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    animation-duration: 0.5s; /* Animation duration */
+    animation-fill-mode: forwards; /* Keep final animation state */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="about-content">
+            <h2>Who We Are</h2>
+            <p>We are a team of dedicated healthcare professionals passionate about improving lives through quality medical care. Our clinic combines compassion and expertise to ensure the best care for our patients.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Clinic Name. All rights reserved.</p>
+    </footer>
+    <script>
+        // Function to apply slide animation and navigate to the next page
+        function navigateTo(url, direction) {
+            // Apply the correct slide animation class
+            const body = document.body;
+            body.className = direction === "forward" ? "slide-forward" : "slide-backward";
+            
+            // Wait for the animation to complete, then navigate
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500); // Matches the animation duration in CSS
+        }
+    </script>
+    
+</body>
+</html>
